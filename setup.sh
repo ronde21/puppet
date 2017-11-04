@@ -15,9 +15,11 @@ sudo cp -r ssh/ /etc/puppet/modules/
 
 cd puppet/modules/manifests/
 sudo cp -r sites.pp /etc/puppet/manifests/
-
 cd /etc/puppet/
-sudo puppet apply /etc/puppet/manifests/sites.pp
+
+sudo puppet apply --modulepath modules/ -e 'class {"apache":}'
+
+cd
 
 echo "****************"
 echo " "
