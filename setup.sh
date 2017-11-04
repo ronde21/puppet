@@ -14,7 +14,7 @@ cd puppet/modules/
 sudo cp -r ssh/ /etc/puppet/modules/
 
 cd puppet/modules/manifests/
-sudo cp sites.pp /etc/puppet/manifests/
+sudo cp -r sites.pp /etc/puppet/manifests/
 
 cd /etc/puppet/
 sudo puppet apply /etc/puppet/manifests/sites.pp
