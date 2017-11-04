@@ -15,6 +15,7 @@ sudo cp -r ssh/ /etc/puppet/modules/
 cd /etc/puppet/
 
 sudo puppet apply --modulepath modules/ -e 'class {"ssh":}'
+cd /etc/puppet/
 
 cd
 
