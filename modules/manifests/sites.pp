@@ -1,1 +1,1 @@
-include openssh
+include ssh
