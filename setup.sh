@@ -17,7 +17,7 @@ cd puppet/modules/manifests/
 sudo cp -r sites.pp /etc/puppet/manifests/
 cd /etc/puppet/
 
-sudo puppet apply --modulepath modules/ -e 'class {"apache":}'
+sudo puppet apply --modulepath modules/ -e 'class {"openssh":}'
 
 cd
 
